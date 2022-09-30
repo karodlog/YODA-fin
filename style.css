@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;400;600&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(324deg, transparent 0%, transparent 45%, rgba(186, 186, 186, 0.04) 45%, rgba(186, 186, 186, 0.04) 47%, transparent 47%, transparent 100%), linear-gradient(208deg, transparent 0%, transparent 40%, rgba(186, 186, 186, 0.04) 40%, rgba(186, 186, 186, 0.04) 80%, transparent 80%, transparent 100%), linear-gradient(202deg, transparent 0%, transparent 20%, rgba(186, 186, 186, 0.04) 20%, rgba(186, 186, 186, 0.04) 40%, transparent 40%, transparent 100%), linear-gradient(338deg, transparent 0%, transparent 10%, rgba(186, 186, 186, 0.04) 10%, rgba(186, 186, 186, 0.04) 72%, transparent 72%, transparent 100%), linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+    font-family: 'M PLUS 1 Code', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.global {
+    width: 100%;
+    /* max-width: 600px;
+    height: 60vh;
+    max-height: 60%; */
+    position: absolute;
+    /* background: orange; */
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.containerYoda{
+    margin: 0 auto;
+
+}
+.yoda {
+    width: 25vw;
+    height: auto;
+    max-width: 375px;
+    min-width: 150px;
+    /* min-width: 200px;
+    max-width: 400px; */
+    /* height: 50%; */
+    margin: 0 auto;
+    margin-bottom: 2vw;
+}
+
+.containerTxt{
+    /* background: orange; */
+}
+
+.rebours10{
+    width: 40%;
+    height: 500px;
+    /* background: orange; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+.chiffres{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    font-size: 125rem;
+    color: white;
+    opacity: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    width: 100%;
+    position: relative;
+    color: #6b6b6b;
+    line-height: 135%;
+    font-size: clamp(14px, 3vw, 30px);
+}
+
+h3::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #454545;
+    position: absolute;
+    right: 50%;
+    bottom: -5px;
+    transform: translateX(50%);
+}
+
+h3 span {
+    font-weight: 700;
+    font-size: clamp(20px, 3.5vw, 45px);
+    color: #ad0000;
+
+}
+
+h2 {
+    margin: 0;
+    width: auto;
+    color: #d8d8d8;
+    font-size: clamp(40px, 6.5vw, 80px);
+    text-align: center;
+    margin: 1vh auto;
+    font-weight: 700;
+    word-wrap: none;
+}
+
+#force {
+    color: rgb(133, 133, 133);
+    border: none;
+    font-size: clamp(21px, 2.6vw, 35px);
+    font-weight: 400;
+    width: auto;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 400px) {
+    #force{
+        font-size: 5vw;
+    }
+    h2{
+        font-size: 10vw;
+    }
+    h3{
+        font-size: 4vw;
+    }
+    span{
+        word-wrap: break-word;
+        margin: 10px 0;
+        line-height: 30px;
+        font-size: 2vw;
+    }
+
+}
+
+
+.containerGameOver{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.game{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.358);
+    font-size: 19rem;
+    transform: translateX(-1000px);
+    opacity: 0;
+    filter: blur(10px);
+    
+}
+.over{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.358);
+    font-size: 19rem;
+    transform: translateX(1000px);
+    opacity: 0;
+    filter: blur(10px);
+
+}
